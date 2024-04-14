@@ -1,0 +1,20 @@
+{%extends 'master.html'%}
+{%block title%}pc_details{%endblock%}
+
+{%block content%}
+<center>
+<p>{{memb.comment}}</p>
+</center>
+<div class="mycard">
+<center>
+<h1>{{memb.name}}</h1>
+<p>{{memb.proc}}</p>
+<p>{{memb.ram}}</p>
+<p>{{memb.bat}}</p>
+<p>{{memb.drive}}</p>
+<img src="{{memb.img1.url}}" height="300" width="400"><br><br>
+<img src="{{memb.img2.url}}" height="300" width="400"><br><br>
+<img src="{{memb.img3.url}}" height="300" width="400"></center>
+<li onclick="window.location='/pc_blog'">Go Back Page</li>
+</div>
+{%endblock%}
