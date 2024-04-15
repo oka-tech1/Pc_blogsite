@@ -1,0 +1,16 @@
+{%extends 'master.html'%}
+{%block title%}list_of_pc's{%endblock%}
+
+{%block content%}
+<ul><br>
+<center>List of available laptops in the shop.</h1></center>
+    {%for pc_post in object_list%}
+        <div class="mycard">
+        <h1>{{pc_post.name}}</h1>
+        <center><img src="{{pc_post.img.url}}" height="200" width="300"></center><br><br>
+        <li onclick="window.location='/pc_blog/details/{{pc_post.id}}'">CHECK PC DETAILS</li>
+        </div>
+    {%endfor%}
+</ul>
+
+{%endblock%}
